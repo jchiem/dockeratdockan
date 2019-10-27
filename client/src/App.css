@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.listitem-form input {
+  margin-bottom: 1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  width: 20rem;
+}
+
+.add-button {
+  margin-right: 1rem;
+}
+
+.listItems {
+  list-style: none;
+  padding-left: 0;
+  width: 10rem;
+}
+
+.listItems li {
+  text-align: left;
+  border-bottom: 1px solid gray;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.route-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
