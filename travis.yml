@@ -1,0 +1,20 @@
+sudo: required
+
+branches:
+  only:
+  - gh-pages
+  - /.*/
+
+services:
+  - docker
+
+before_install:
+  - docker build -t henkenet/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run henkenet/react-test npm test -- --coverage
+
+after_success:
+  - docker build -t henkenet/multi-client ./client
+  - docker build -t henkenet/multi-nginx ./nginx
+  - docker build -t henkenet/multi-server ./server
